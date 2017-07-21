@@ -48,7 +48,7 @@ public class ClientServlet extends HttpServlet
             // un seul film demandé
             Client client = dao.findById(Integer.parseInt(id));
             request.setAttribute("client", client);
-            rd = this.getServletContext().getRequestDispatcher("WEB-INF/client.jsp");
+            rd = this.getServletContext().getRequestDispatcher("/WEB-INF/client.jsp");
         }
         else
         {
@@ -56,7 +56,7 @@ public class ClientServlet extends HttpServlet
             List<Client> clients = dao.findAll();
             request.setAttribute("clients", clients);
             // dispatch
-            rd = this.getServletContext().getRequestDispatcher("WEB-INF/clients.jsp");
+            rd = this.getServletContext().getRequestDispatcher("/WEB-INF/clients.jsp");
         }
 
         // patate chaude
