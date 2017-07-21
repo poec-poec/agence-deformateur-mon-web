@@ -17,14 +17,11 @@
 		<div class="col-md-4">	
 			<h2>${client.nom }</h2>
 			<p>${client.prenom }</p>
-			<p>${client.email }</p>
-			<p>${client.numeroTel }</p>
-			<p>${client.numeroFax }</p>
-			<p class="btn btn-info"><span class="badge">${client.id}</span> <a class="" href="?id=${ client.id }">Plus d'infos</a></p>
+			<p class="btn btn-default"><a class="" href="?id=${ client.id }">Plus d'infos</a></p>
 		
 	</div>
 		</c:forEach>
-	
+	<p>${adresse.numeroFax }</p>
 </body>
 </html>
 

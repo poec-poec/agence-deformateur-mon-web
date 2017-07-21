@@ -17,11 +17,12 @@
 		<div class="col-md-6">
 			<p>Client N° <span class="badge">${client.id}</span></p>
 			<p>Nom  : ${client.nom}</p>
-			<p>Prénom : ${client.prenom} minutes</p>
+			<p>Prénom : ${client.prenom}</p>
 			<p>Email : ${client.email}</p>
 			<p>Télephone : ${client.numeroTel}</p>
 			<p>Fax : ${client.numeroFax}</p>
-			<p>
+			
+			<p>${client.adresse }</p>
 				<a class="btn btn-primary btn-lg" href="./client">Retour à la liste des clients
 				</a>
 			</p>			
